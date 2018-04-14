@@ -78,3 +78,7 @@ input[type="button"] {
   width: 5rem;
   text-align: center;
 }
+
+.social {
+  max-width: 1em;
+}
