@@ -1,0 +1,52 @@
+<html>
+
+<head>
+    <title>Pixel Art Maker!</title>
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script defer src="index.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:regular,bold|Roboto:regular,bold" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <h1>Pixel Art Maker</h1>
+    <h4>by:
+        <a href="http://www.instagram.com/kyleGeary" target="_blank">Kyle Geary</a>
+    </h4>
+    <CENTER>
+        <div class='container'>
+            <h3>Choose Grid Size</h3>
+            <form id="sizePicker">
+<span>Height: </span>
+<span id="startHeight">0</span>
+<br/>
+<input type="range" id="inputHeight" value="1" min="1" max="20" oninput="submitValues()">
+<br/>
+<span>Width: </span>
+<span id="startWidth">0</span>
+<br/>
+<input type="range" id="inputWidth" value="1" min="1" max="20" onInput="submitValues()">
+<br/>
+
+<!--
+                Height:
+                <input type="number" id="inputHeight" name="height" min="1" value="5">
+                <br/> Width:
+                <input type="number" id="inputWidth" name="width" min="1" value="5">
+                <br/>
+-->
+<!--
+    <input type="button" onclick="submitValues()" value="create">
+-->
+                <input type="button" onclick="clearValues()" value="restart"> </input>
+
+            </form>
+            <h3>Choose A Color</h3>
+            <input type="color" id="colorPicker">
+        </div>
+    </CENTER>
+
+    <table id="pixelCanvas"></table>
+</body>
+
+</html>

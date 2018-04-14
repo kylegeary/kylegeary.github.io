@@ -1,0 +1,80 @@
+body {
+  font-family: "Open Sans", sans-serif;
+  font-style: regular;
+  text-align: center;
+}
+a {
+  color: #0509a8;
+  text-decoration: none;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 70px;
+  font-weight: "regular";
+  margin: 0.2em;
+}
+
+h3 {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: "regular";
+  margin-bottom: 0.5em;
+}
+
+h4 {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: "regular";
+  margin-bottom: 0.5em;
+  margin-top: 0em;
+}
+
+table,
+tr,
+td {
+  border: 1px solid black;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 0 auto;
+  margin-bottom: 5%;
+}
+
+tr {
+  height: 20px;
+}
+
+td {
+  width: 20px;
+}
+
+input[type="number"] {
+  width: 6em;
+}
+#colorPicker {
+  margin-bottom: 1em;
+}
+
+.container {
+  border: 1px solid black;
+  padding: 10px;
+  box-shadow: 5px 10px;
+  margin: 2em;
+  align-content: center;
+  max-width: 20em;
+}
+
+#pixelCanvas {
+  margin-top: 4em;
+  box-shadow: 5px 10px;
+}
+
+input[type="button"] {
+  width: 5rem;
+  text-align: center;
+}
