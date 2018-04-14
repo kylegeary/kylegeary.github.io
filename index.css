@@ -80,5 +80,5 @@ input[type="button"] {
 }
 
 .social {
-  max-width: 1em;
+  max-width: 1em !important;
 }
