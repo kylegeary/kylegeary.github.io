@@ -9,46 +9,53 @@
 </head>
 
 <body>
-    <h1>Pixel Art Maker</h1>
-    <h4>by: Kyle Geary</h4>
-    <a href="http://www.instagram.com/kyleGeary" target="_blank"><img src="/assets/instagram.png" class="social">
-    <a href="https://github.com/kylegeary" target="_blank"><img src="/assets/GitHub-Mark-64px.png" class="social">
-    <a href="https://www.linkedin.com/in/kylegeary/" target="_blank"><img src="/assets/linkedin.png" class="social"></a>
-    
-    <CENTER>
-        <div class='container'>
-            <h3>Choose Grid Size</h3>
-            <form id="sizePicker">
-<span>Height: </span>
-<span id="startHeight">0</span>
-<br/>
-<input type="range" id="inputHeight" value="1" min="1" max="20" oninput="submitValues()">
-<br/>
-<span>Width: </span>
-<span id="startWidth">0</span>
-<br/>
-<input type="range" id="inputWidth" value="1" min="1" max="20" onInput="submitValues()">
-<br/>
 
-<!--
-                Height:
-                <input type="number" id="inputHeight" name="height" min="1" value="5">
-                <br/> Width:
-                <input type="number" id="inputWidth" name="width" min="1" value="5">
+<div class="container">
+    <!--Grid app-->
+    <div class="item">
+        <h1>Pixel Art Maker</h1>
+        <span>
+            <h4>Kyle Geary</h4>
+            <a href="http://www.instagram.com/kyleGeary" target="_blank">
+                <img src="/assets/instagram.png" class="social">
+                <a href="https://github.com/kylegeary" target="_blank">
+                    <img src="/assets/GitHub-Mark-64px.png" class="social">
+                    <a href="https://www.linkedin.com/in/kylegeary/" target="_blank">
+                        <img src="/assets/linkedin.png" class="social">
+                    </a>
+        </span>
+            <span>
                 <br/>
--->
-<!--
-    <input type="button" onclick="submitValues()" value="create">
--->
-                <input type="button" onclick="clearValues()" value="restart"> </input>
+                <br/>
+                <form id="sizePicker">
 
-            </form>
-            <h3>Choose A Color</h3>
-            <input type="color" id="colorPicker">
+                <h3>Create Your Grid</h3>
+                <br/>
+                    <span id="values">Height: </span><span id="startHeight">0</span>
+                <br/>
+                    <input type="range" id="inputHeight" value="1" min="1" max="20" oninput="submitValues()">
+                <br/>
+                    <span id="values">Width: </span><span id="startWidth">0</span>
+                <br/>
+                    <input type="range" id="inputWidth" value="1" min="1" max="20" onInput="submitValues()">
+                <br/>
+
+                <span id="values">Color:
+                    <br/>
+                    <input type="color" id="colorPicker">
+                    </span>
+                    <br/>
+                <br/>
+                    <button onclick="clearValues()">Restart</button>
+                </form>
+            </span>
         </div>
-    </CENTER>
-
-    <table id="pixelCanvas"></table>
+    <div class="item"></div>
+    <div class="item"></div>
+    <div class="item">
+        <table id="pixelCanvas"></table>
+    </div>
+</div>
 </body>
 
 </html>
